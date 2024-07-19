@@ -30,6 +30,7 @@ group :development do
   gem 'rubocop-performance'
   gem 'rubocop-rails'
   gem 'rubocop-md'
+  gem 'bullet'
 end
 
 group :test do
