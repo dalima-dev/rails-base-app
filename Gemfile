@@ -17,6 +17,7 @@ gem 'bootsnap', require: false
 gem 'bootstrap', '~> 5.3.3'
 gem 'devise', '~> 4.9'
 gem 'cancancan'
+gem 'simple_form'
 
 group :development, :test do
   gem 'debug', platforms: %i[ mri windows ]
