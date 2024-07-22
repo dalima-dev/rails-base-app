@@ -16,6 +16,7 @@ gem 'bootsnap', require: false
 # gem "image_processing", "~> 1.2"
 gem 'bootstrap', '~> 5.3.3'
 gem 'devise', '~> 4.9'
+gem 'cancancan'
 
 group :development, :test do
   gem 'debug', platforms: %i[ mri windows ]
