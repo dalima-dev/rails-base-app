@@ -1,0 +1,16 @@
+<div class="m-auto" style="max-width: 400px;">
+  <div class="card card-border-color card-border-color-primary">
+    <h2 class="mt-4 text-center">Sign In</h2>
+    <div class="card-body d-flex flex-column gap-1">
+      <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: 'd-flex flex-column gap-2' }) do |f| %>
+        <%= f.input :email, autofocus: true, autocomplete: "email" %>
+        <%= f.input :password, autocomplete: "current-password" %>
+        <% if devise_mapping.rememberable? %>
+          <%= f.input :remember_me, as: :boolean %>
+        <% end %>
+        <%= f.submit "Log in", class: "btn btn-primary fluid" %>
+      <% end %>
+      <%= render "users/shared/links" %>
+    </div>
+  </div>
+</div>
